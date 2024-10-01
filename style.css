@@ -1,0 +1,71 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./img/ville.jpg);
+    background-size: cover;
+    animation: moveBackground 1s linear infinite; 
+    z-index: -1;
+}
+@keyframes moveBackground {
+    from {
+        background-position: 0 0; 
+    }
+    to {
+        background-position: 100% 0; 
+    }
+}
+.content {
+    position: relative;
+    z-index: 2; 
+    margin-top: 700px;
+}
+.car-container {
+    margin-right: 300px;
+    margin-left: 100px;
+    position: absolute;
+    bottom: -10%;
+    width: 600px;
+    height: 500px;
+    
+}
+
+.wheel1,
+.wheel2 {
+    width: 70px;
+    height: 70px;
+    background-color: grey;
+    border-radius: 50%;
+    border: 30px solid black;
+    position: absolute;
+    bottom: 0;
+}
+.wheel1 {
+    left: 10%;
+}
+
+
+.wheel2 {
+    right: 10%;
+}
+
+.carrosserie {
+    margin-top: 150px;
+    border-radius: 85% 85% 0% 0%;
+    background-color: #9c071b;
+    width: 480px;
+    height: 200px;
+}
+
+.toit {
+    margin-top: 200px;
+    border-radius: 300px 500px 100px 300px;
+    background-color: #9c071b;
+    width: 600px;
+    height: 180px;
+    position: absolute;
+    bottom: 15%;
+}
+
